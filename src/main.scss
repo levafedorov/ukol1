@@ -1,0 +1,21 @@
+
+@import "./Components/scss-components/abstracts/variables";
+@import "./Components/scss-components/abstracts/functions";
+@import "./Components/scss-components/abstracts/mixins";
+
+@import "./Components/scss-components/base/base";
+@import "./Components/scss-components/base/typography";
+@import "./Components/scss-components/base/utilities";
+@import "./Components/scss-components/layouts/layouts";
+
+//COMPONENTS
+
+@import "./app";
+@import "./Components/Header/header";
+@import "./Components/Container/container";
+@import "./Components/Header/Menu/menu";
+@import "./Components/Header/Search/search";
+@import "./Components/Button/button";
+@import "./Components/Header/DropDown/drop-down";
+@import "./Components/Header/Profile/profile";
+

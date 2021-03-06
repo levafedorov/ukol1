@@ -1,0 +1,27 @@
+.profile{
+    .dropdown{
+        &>a{
+           padding: 3rem 6.5rem !important;
+           position: relative;
+           transition: background-color .3s;
+           &:after{
+               display: none;
+           }
+           &:before{
+               content:"";
+               width: 3.5rem;
+               height: 3.5rem;
+               position: absolute;
+               left: 1.6rem;
+               top: 50%;
+               transform: translateY(-50%);
+               background-image: url("../../../assets/images/profile.svg");
+               background-repeat: no-repeat;
+               background-size: contain;
+           }
+          &:hover{
+              background-color: rgba($color-white, 0.3);
+          }
+        }
+    }   
+}

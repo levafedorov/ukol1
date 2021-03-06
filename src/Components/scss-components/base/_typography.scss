@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
+.typo{
+  &-h3{
+    @include font(1.4rem, 700, $color-black);
+  }
+  &-h2{
+    @include font(2.4rem, 400, $color-black);
+  }
+  &-menu{
+    @include font(1.8rem, 300, $color-white);
+  }
+  &-submenu{
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+    &--white{
+       color: $color-white;
+    }
+    &--black{
+      color: $color-black;
+    }
+    &--upper{
+      text-transform: uppercase;
+    }
+    &--lower{
+      text-transform: lowercase;
+    }
+    &--capital{
+      text-transform:capitalize
+    }
+  }
+  
+  &-place-holder{
+    @include font(1.2rem, 400, $color-black)
+  }
+}
