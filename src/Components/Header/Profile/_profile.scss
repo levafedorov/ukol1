@@ -1,5 +1,5 @@
 .profile{
-    .dropdown{
+    .dropdown{            ///VENDOR STYLES CHANGE
         &>a{
            padding: 3rem 6.5rem !important;
            position: relative;
@@ -22,6 +22,13 @@
           &:hover{
               background-color: rgba($color-white, 0.3);
           }
-        }
-    }   
+        }     
+    } 
+
+    .dropdown.show > a{
+        background-color: rgba($color-white, 0.3);
+     }
+
 }
+
+///

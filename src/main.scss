@@ -1,4 +1,10 @@
 
+// Required (Must-have for any SCSS file(s) to work)
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+
 @import "./Components/scss-components/abstracts/variables";
 @import "./Components/scss-components/abstracts/functions";
 @import "./Components/scss-components/abstracts/mixins";
@@ -11,6 +17,7 @@
 //COMPONENTS
 
 @import "./app";
+@import "./Components/Main/main-space";
 @import "./Components/Header/header";
 @import "./Components/Container/container";
 @import "./Components/Header/Menu/menu";
@@ -18,4 +25,8 @@
 @import "./Components/Button/button";
 @import "./Components/Header/DropDown/drop-down";
 @import "./Components/Header/Profile/profile";
-
+@import "./Components/Sections/SectionMarks/section-marks";
+@import "./Components/MarksList/marks-list";
+@import "./Components/Badge/badge";
+@import "./Components/Sections/SectionDashBoards/section-dash-boards";
+@import "./Components/DashBoard/dash-board";

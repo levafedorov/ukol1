@@ -1,7 +1,3 @@
-// Required (Must-have for any SCSS file(s) to work)
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
 
 // Bootstrap Navbar Styles
 @import "~bootstrap/scss/reboot"; // Bootstrap Normalize (If you don't need normalization, delete it)
@@ -17,21 +13,23 @@
     position: relative;
     z-index: 100;
     background-color: $color-green-light;
+    &__nav{
+        padding:0;
+        justify-content: space-between;
+    }
     &__collapse{
       justify-content: space-between;
+      flex-grow: 0;
+      flex-basis: 103rem !important;
     }
     &__logo-place{
         width: 3.7rem;
         height: 5.2rem;
-        margin-right:10rem;
     }
     &__logo{
         width: 100%;
         height: 100%;
         object-fit: contain;
-    }
-    &__nav{
-        padding:0;
     }
 }
 
@@ -40,31 +38,6 @@
 
 
 
-// .header{
-//    background-color: $color-green-light;
-// &__layout{
-//     width: 100%;
-//     height: 8.6rem;
-//     @include space-b;
-//     align-items: center;
-// }
-// &__left{
-
-// }
-// &__logo{  
-//     width: 3.7rem;
-//     height: 4.5rem;
-//     img{
-//         width: 100%;
-//         height: 100%;
-//         object-fit: contain;
-//     }
-// }
-// &__right{
-//     background-color: green;
-// }
-
-// }
 
  
 

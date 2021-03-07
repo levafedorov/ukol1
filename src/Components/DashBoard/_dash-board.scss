@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/tables";
+
+.dash-board{   
+    background-color: $color-white;
+    &__table{
+    }
+    &__cell{
+        @include font(1.6rem, 300, $color-black);
+    }
+}

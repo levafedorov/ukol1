@@ -15,7 +15,7 @@ export default function Menu() {
             "K vyzvednutí",
             "K vyzkoušení",
             "Kontaktovat klienta",
-            "Uyavřena",
+            "Uzavřeno",
             "Reklamace"
         ]
     }

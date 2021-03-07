@@ -1,0 +1,42 @@
+.badge{
+    display: inline-block;
+    line-height:1;
+    padding: 1rem;
+    border-radius: $r-big;
+    &--black{
+        background-color: $color-black;
+    }
+    &--yellow{
+        background-color: $color-yellow;
+    }
+    &--orange{
+        background-color: $color-orange;
+    }
+    &--brown{
+        background-color: $color-brown;
+    }
+    &--purple-dark{
+        background-color: $color-purple-dark;
+    }
+    &--purple-light{
+        background-color: $color-purple-light;
+    }
+    &--blue-light{
+        background-color: $color-blue-light;
+    }
+    &--blue-dark{
+        background-color: $color-blue-dark;
+    }
+    &--jade{
+        background-color: $color-jade;
+    }
+    &--green-light{
+        background-color: $color-green-light;
+    }
+    &--green-dark{
+        background-color: $color-green-dark;
+    }
+    &--red{
+        background-color: $color-red;
+    }
+}
