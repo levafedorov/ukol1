@@ -13,7 +13,8 @@ function App() {
          <Main>
          <Switch>
            <Route path="/ukol-first-deploy" exact>
-               <SectionMarks />
+               {/* <SectionMarks /> */}
+               <SectionDashBoard />
            </Route>
            <Route path="/ukol-first-deploy/sections">
                 <SectionDashBoard />
