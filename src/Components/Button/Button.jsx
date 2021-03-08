@@ -15,10 +15,11 @@ export default function Button(props) {
               break;
         case "delete": image = bin;
               break;    
+        default: image="";      
     }  
 
     return (
-        <button type="submit" className="btn" type={type} fn={fn} name={name}>
+        <button className="btn" type={type} onClick={fn} name={name}>
               <img src={image} alt="search"/>
         </button>
     )

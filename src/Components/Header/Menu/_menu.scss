@@ -1,7 +1,13 @@
 .menu{
     flex-basis: 50rem;
     min-width: 40.2rem;
-    justify-content: space-between;
+    justify-content: space-between;  
+    &__link{
+        transition: all .3s ease;
+       &:hover{
+           color: rgba($color-blue-dark, .8) !important;
+       }
+    }
     .dropdown-menu{
         top: 170%;
     }

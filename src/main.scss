@@ -6,13 +6,11 @@
 
 
 @import "./Components/scss-components/abstracts/variables";
-@import "./Components/scss-components/abstracts/functions";
 @import "./Components/scss-components/abstracts/mixins";
 
 @import "./Components/scss-components/base/base";
 @import "./Components/scss-components/base/typography";
 @import "./Components/scss-components/base/utilities";
-@import "./Components/scss-components/layouts/layouts";
 
 //COMPONENTS
 
@@ -30,3 +28,4 @@
 @import "./Components/Badge/badge";
 @import "./Components/Sections/SectionDashBoards/section-dash-boards";
 @import "./Components/DashBoard/dash-board";
+@import "./Components/Spinner/spinner";

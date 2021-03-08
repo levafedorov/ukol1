@@ -8,12 +8,26 @@
     } //
     &>a{
         @include font(1.8rem, 300, $color-white);
+        transition: all .3s ease;
+        &:hover{
+            color: rgba($color-blue-dark, .8) !important;
+        }
+        &::after{transition: transform .3s;}
+    }
+    &.show > a{
+        &::after{
+            transform: rotate(180deg);
+        }
     }
     &__link{
         font-size: 1.5rem;
         font-weight: 300;
         padding-top:1rem;
         padding-bottom:1rem;
+        transition: all .15s;
+        @include respons(phone){
+            padding:.5rem;
+        } 
         &:not(:last-child){
             border-bottom:1px solid $color-grey-light;
         }
@@ -22,7 +36,7 @@
             color: $color-black;
         }
     }
-
+  
 }
 
 

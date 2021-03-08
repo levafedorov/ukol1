@@ -4,7 +4,6 @@ export default function Badge(props) {
     const {type} = props;
 
     let color = badgeMap.get(type);
-    console.log(color);
 
     return (
         <div className={`badge badge--${color} typo-submenu typo-submenu--upper typo-submenu--white `}>

@@ -1,7 +1,12 @@
 
 html{
-    font-size: 62.5% //1rem;
+    font-size: 62.5% ;//1rem;
+    @include respons(phone){
+        font-size: 57.5% ;
+        scroll-behavior: smooth;
+    }  
 }
+
 
 body{
    box-sizing: border-box;

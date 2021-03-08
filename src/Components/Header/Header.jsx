@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown} from "react-bootstrap";
+import {Navbar} from "react-bootstrap";
 import Container from "../Container/Container";
 import Menu from "./Menu/Menu";
 import Search from "./Search/Search";
@@ -11,7 +11,7 @@ export default function Header() {
         <header className="header">
             <Container>
                 <Navbar bg="light" expand="lg" className="header__nav">
-                    <Navbar.Brand href="#home" className="header__logo-place">
+                    <Navbar.Brand href="/" className="header__logo-place">
                         <img src={logo} alt="logo" className="header__logo"/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

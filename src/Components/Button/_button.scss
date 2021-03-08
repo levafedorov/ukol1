@@ -3,4 +3,9 @@
     background-color: $color-white;
     border: none;
     width: 5rem;
+    border-radius: 2rem;
+    transition: all .3s ease;
+    &:hover{
+      background-color: $color-blue-light;
+    }
   }

@@ -6,8 +6,19 @@
         grid-auto-rows: minmax(min-content, min-content);
         grid-template-columns: repeat(auto-fit, minmax(44rem, 1fr));
         grid-gap: 4rem;
+        @include respons(phone){
+            grid-template-columns: 1fr;
+        }  
     }
-    .board{
-       border: 1px solid black
-    }//test
+    .dash-board{
+        @include respons(tab-land){
+            margin-top: 5rem;
+            position: relative;
+        }
+        &__link-target{
+            @include respons(tab-land){
+                top:-15rem;
+            } 
+        }  
+    }
 }

@@ -1,35 +1,35 @@
 import React from 'react';
-import {Table} from "react-bootstrap";
+import Table from "./Table/Table";
 
-export default function DashBoard() {
+
+export default function DashBoard(props) {
+    
+    const {items, name, link} = props
+
     return (
         <div className="dash-board">
-            <Table responsive="sm" className="dash-board__table">
-            <thead>
-            <tr>
-                <th className="dash-board__h3 typo-h3">Table heading</th>
-                <th className="dash-board__h3 typo-h3">Table heading</th>
-                <th className="dash-board__h3 typo-h3">Table heading</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td className="dash-board__cell">Table cell</td>
-                <td className="dash-board__cell">Table cell</td>
-                <td className="dash-board__cell">Table cell</td>
-            </tr>
-            <tr>
-                <td className="dash-board__cell">Table cell</td>
-                <td className="dash-board__cell">Table cell</td>
-                <td className="dash-board__cell">Table cell</td>
-            </tr>
-            <tr>
-                <td className="dash-board__cell">Table cell</td>
-                <td className="dash-board__cell">Table cell</td>
-                <td className="dash-board__cell">Table cell</td>
-            </tr>
-            </tbody>
-        </Table>
+            <a id={`${link}`} className="dash-board__link-target"></a>
+            <h2 className="dash-board__header typo-h2">
+                {name}
+            </h2>
+            {
+              items.length ?
+                <>
+                <Table {...props}/> 
+                <div className="dash-board__bottom">
+                    <a href="/all" className="dash-board__show-link">Zobrazit vše</a>
+                </div>
+                </>
+                : (
+                <p className="dash-board__empty">
+                    PRÁZDNO
+                </p>  )         
+          }  
       </div>
     )
+}
+
+DashBoard.defaultProps = {
+    items: [],
+    name: "default"
 }

@@ -6,8 +6,10 @@ export default function Profile() {
     const ddItems = {
         name: "Petr Novák",
         items:[
-            "Nastavení",
-            "Odhlásit se",
+            {   link: "settings",
+                name: "Nastavení",},
+            {   link: "logout",
+                name: "Odhlásit se",}
         ]
     }
  

@@ -6,7 +6,7 @@
     &__input{
        font-family:inherit;
        font-size:1.8rem;
-       flex-grow: 1;
+       width: 80%;
        border: 0;
        border-radius: $r-small 0 0 $r-small;
        padding: .3rem;
@@ -20,6 +20,7 @@
     }
     .btn{
       height: 100%;
+      width:20%;
       border-radius: 0 $r-small $r-small 0;
     }
 }

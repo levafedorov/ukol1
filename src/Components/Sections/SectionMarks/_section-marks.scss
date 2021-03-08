@@ -1,3 +1,6 @@
 .section-marks{
     padding: 3.7rem 0rem; 
+    @include respons(phone){
+        padding: 0;
+      } 
 }

@@ -8,8 +8,8 @@ export default function DropDown(props) {
 
     return (
         <NavDropdown title={items.name} id="basic-nav-dropdown">
-            {items.items.map((item, i) => (
-                <NavDropdown.Item href={`#${i}`} key={`key-${item}`} className="dropdown__link">{item}</NavDropdown.Item>
+            {items.items.map(({name, link}, i) => (
+                <NavDropdown.Item href={link} key={`key-${name}`} className="dropdown__link">{name}</NavDropdown.Item>
             ))}
         </NavDropdown>
     )

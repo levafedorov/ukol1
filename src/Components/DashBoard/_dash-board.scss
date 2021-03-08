@@ -1,10 +1,89 @@
 @import "~bootstrap/scss/tables";
 
+$t-padding: 3rem;
+$t-padding-min: 2rem;
+$t-padding-tiny: 1.5rem;
 .dash-board{   
     background-color: $color-white;
+    border-radius: $r-big;
+    position: relative;
+    min-height: 20rem;
+    box-shadow: $shadow;
+    &__header{
+        padding:$t-padding;
+        margin:0;
+        @include respons(phone){
+            padding: $t-padding-min;
+          }  
+    }
     &__table{
+        margin-bottom: 0;
     }
-    &__cell{
+    &__t-header{
+        border-top: none !important; 
+        &:first-child{
+            padding-left:$t-padding; 
+            @include respons(phone){
+                padding-left: $t-padding-min;
+              }  
+        }
+        &:last-child{
+            padding-right:$t-padding;
+            @include respons(phone){
+                padding-right: $t-padding-min;
+              }  
+        }
+    }
+    &__t-cell{
+        &:first-child{
+            padding-left:$t-padding; 
+            @include respons(phone){
+                padding-left: $t-padding-min;
+              }  
+        }
+        &:last-child{
+            padding-right:$t-padding;
+            text-align: right;
+            width:40%;
+            @include respons(phone){
+                padding-right: $t-padding-min;
+                white-space: nowrap;
+                width:auto;
+              }  
+        }
         @include font(1.6rem, 300, $color-black);
+        vertical-align: middle !important;
     }
+
+   &__bottom{
+     padding: $t-padding-min $t-padding;
+     text-align: right;
+     border-top: 1px solid #dee2e6;
+   }
+
+   &__show-link{
+     font-size: 1.4rem;  
+   }
+
+   .btn{
+       width: 3rem;
+       height: 3rem;
+       &:not(:first-child){
+           margin-left: 1rem;
+           @include respons(phone){
+            margin-left: .5rem;
+          } 
+       }
+   }
+   &__empty{
+       font-size: 2.5rem;
+       color: $color-orange;
+       position: absolute;
+       @include centerer();
+   }
+   &__link-target{
+        position: absolute;
+        left:0;
+        z-index: -200;
+   }
 }
