@@ -8,7 +8,7 @@ import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={`/${process.env.PUBLIC_URL}`}>
        <Header/>
          <Main>
          <Switch>
