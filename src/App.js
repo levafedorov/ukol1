@@ -8,17 +8,13 @@ import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={`/${process.env.PUBLIC_URL}`}>
        <Header/>
          <Main>
          <Switch>
-           <Route path="/" exact>
-               <SectionMarks />
-           </Route>
-           <Route path="/sections">
-                <SectionDashBoard />
-           </Route>
-           <Redirect from="*" to="/" />
+           <Route path={`/${process.env.PUBLIC_URL}/sections`} component={SectionDashBoard} exact/>
+           <Route path="" component={SectionMarks} exact />
+           {/* <Redirect from="*" to="/ukol-first-deploy" /> */}
          </Switch> 
         </Main>
       </Router> 
