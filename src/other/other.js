@@ -137,7 +137,7 @@ var ddItems = {
         },
         {
             name: "Reklamace",
-            link: "/sections/11",
+            link: "/sections/#11",
         },     
         
     ]
