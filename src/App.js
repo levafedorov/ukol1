@@ -12,7 +12,7 @@ function App() {
        <Header/>
          <Main>
          <Switch>
-           <Route path="/" component={SectionMarks} exact />
+           <Route path="" component={SectionMarks} exact />
            <Route path={`/sections`} component={SectionDashBoard} />
            {/* <Redirect from="*" to="/ukol-first-deploy" /> */}
          </Switch> 
