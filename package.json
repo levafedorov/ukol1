@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "http://levafedorov.github.io/ukol1-deploy",
+  "homepage": "http://levafedorov.github.io/ukol-first-deploy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
