@@ -12,8 +12,8 @@ function App() {
        <Header/>
          <Main>
          <Switch>
-           <Route path={`/${process.env.PUBLIC_URL}/sections`} component={SectionDashBoard} exact/>
            <Route path="" component={SectionMarks} exact />
+           <Route path={`/sections`} component={SectionDashBoard} exact/>
            {/* <Redirect from="*" to="/ukol-first-deploy" /> */}
          </Switch> 
         </Main>
