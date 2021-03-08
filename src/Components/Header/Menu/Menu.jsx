@@ -7,8 +7,8 @@ export default function Menu() {
    
     return (
         <Nav className="mr-auto menu">
-        <Nav.Link href="/ukol-first-deploy" className="menu__link typo-menu">Nová zakázka</Nav.Link>
-        <Nav.Link href="/ukol-first-deploy/sections" className="menu__link typo-menu">Seznam zakázek</Nav.Link>
+        <Nav.Link href="/" className="menu__link typo-menu">Nová zakázka</Nav.Link>
+        <Nav.Link href="/sections" className="menu__link typo-menu">Seznam zakázek</Nav.Link>
            <DropDown items={ddItems }/>
         </Nav>
     )

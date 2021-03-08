@@ -12,14 +12,13 @@ function App() {
        <Header/>
          <Main>
          <Switch>
-           <Route path="/ukol-first-deploy" exact>
-               {/* <SectionMarks /> */}
-               <SectionDashBoard />
+           <Route path="/" exact>
+               <SectionMarks />
            </Route>
-           <Route path="/ukol-first-deploy/sections">
+           <Route path="/sections">
                 <SectionDashBoard />
            </Route>
-           <Redirect from="*" to="/ukol-first-deploy/sections" />
+           <Redirect from="*" to="/" />
          </Switch> 
         </Main>
       </Router> 

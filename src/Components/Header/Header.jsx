@@ -11,7 +11,7 @@ export default function Header() {
         <header className="header">
             <Container>
                 <Navbar bg="light" expand="lg" className="header__nav">
-                    <Navbar.Brand href="/ukol-first-deploy" className="header__logo-place">
+                    <Navbar.Brand href="/" className="header__logo-place">
                         <img src={logo} alt="logo" className="header__logo"/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

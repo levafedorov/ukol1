@@ -1,8 +1,10 @@
 @import "~bootstrap/scss/tables";
 
 $t-padding: 3rem;
+$t-padding-small: 2.3rem;
 $t-padding-min: 2rem;
 $t-padding-tiny: 1.5rem;
+
 .dash-board{   
     background-color: $color-white;
     border-radius: $r-big;
@@ -35,6 +37,10 @@ $t-padding-tiny: 1.5rem;
         }
     }
     &__t-cell{
+        @include respons(phone){
+            padding-top: $t-padding-small !important;
+            padding-bottom: $t-padding-small !important;
+          }  
         &:first-child{
             padding-left:$t-padding; 
             @include respons(phone){

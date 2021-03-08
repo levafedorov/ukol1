@@ -1,4 +1,8 @@
 .container{
     max-width: 125rem;
     margin: 0 auto;
+    @include respons(phone){
+        padding: .3rem;
+
+      }  
 }
